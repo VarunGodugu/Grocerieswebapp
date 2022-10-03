@@ -6,7 +6,8 @@
 <meta  http-equiv="Content-Type" contentType="text/html; charset="ISO-8859-1">
 <title>Mycart-Home</title>
 
-<%@include file="components/common_css_jsp.jsp"%>
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+<link rel="stylesheet" href="css/style.css">
 
 </head>
 <body>
@@ -14,10 +15,10 @@
 	<%@include file="components/navbar.jsp"%>
 
 
-    <div class="jumbotron big-banner" style="height: 900px; padding-top: 100px;">
+    <div class="jumbotron big-banner" style="height: 800px; padding-top: 20px;">
 
 	<div class="row mt-5">
-		<div class="col-md-6 offset-md-6">
+		<div class="col-md-4 offset-md-4">
 		<div class="card">
 		<div class="card-body">
 				<h3 class="text-center my-3">Add products here</h3>
@@ -25,8 +26,8 @@
 			<form>
 				<!--product title  -->
 				 <div class="form-group">
-    <label for="pTitle">Enter title of the product</label>
-    <input type="text" class="form-control" id="pTitle" aria-describedby="products" placeholder="Enter here">
+    <label for="pName">Enter name of the product</label>
+    <input type="text" class="form-control" id="pName" aria-describedby="products" placeholder="Enter here">
     </div>
     
     			 <div class="form-group">
@@ -40,13 +41,13 @@
     </div>
     
         			 <div class="form-group">
-    <label for="pQuantity">Enter Quantity </label>
-    <input type="number" class="form-control" id="pQuantity" aria-describedby="products" placeholder="Enter here">
+    <label for="Quantity">Enter Quantity </label>
+    <input type="number" class="form-control" id="Quantity" aria-describedby="products" placeholder="Enter here">
     </div>
     
    		<div class="form-group">
-   		<label for="pCat">select catageory </label>
-					<select name="catId" class="form-control" id="">
+   		<label for="category">select category </label>
+					<select name="category" class="form-control" id="category">
 						<option value="non vegetrain">non vegetrain</option>
 						<option value="fruits and vegetables">fruits and
 							vegetables</option>
@@ -57,14 +58,17 @@
 				</div>
 				
 				      				<div class="form-group">
-					<label for="pPic">Select Picture of product</label> <br> <input
-						type="file" id="pPic" name="pPic" required />
+					<label for="pPhoto">Select Picture of product</label> <br> <input
+						type="file" id="pPhoto" name="pPhoto" required />
 				</div>
 				      			
 				      			<div class="container text-center">
 					<button class="btn btn-outline-success">Add Product</button>
 				</div>	
 				
+				      			<div class="container text-side">
+					<button class="btn btn-outline-success">Back</button>
+				</div>	
     
 </form>
 </div>
